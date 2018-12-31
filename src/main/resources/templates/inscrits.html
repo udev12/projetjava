@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Ajout d'un nouvel inscrit</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <h1>Formulaire de saisie</h1>
+        <form action="#" th:action="@{/inscrits}" th:object="${inscrits}" method="post">
+            <p>Id : <input type="text" th:field="*{id_f}" /></p>
+            <p>Nom : <input type="text" th:field="*{nom_f}" /></p>
+            <p>Prénom : <input type="text" th:field="*{prenom_f}" /></p>
+            <p>Courriel : <input type="text" th:field="*{mail_f}" /></p>
+            <p>Age : <input type="text" th:field="*{age_f}" /></p>
+            <p>Nb enfants : <input type="text" th:field="*{nb_enfant_f}" /></p>
+            <p>Date inscription : <input type="date" th:field="*{date_f}" /></p>
+            <p>Admin : <input type="text" th:field="*{admin_f}" /></p>
+            <p>Modo : <input type="text" th:field="*{modo_f}" /></p>
+            <p><input type="submit" value="Valider" /> <input type="reset" value="Annuler" /></p>
+        </form>
+    </body>
+</html>

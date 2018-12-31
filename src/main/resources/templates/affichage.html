@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Getting Started: Handling Form Submission</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <h1>Inscrit ajouté : </h1>
+        <!--<p th:text="'Id : ' + $(tampon.id)"></p>-->
+        <p th:text="'Id : ' + ${tampon.id_f}" />
+        <p th:text="'Nom : ' + ${tampon.nom_f}" />
+        <p th:text="'Prénom : ' + ${tampon.prenom_f}" />
+        <p th:text="'Courriel : ' + ${tampon.mail_f}" />
+        <p th:text="'Age : ' + ${tampon.age_f}" />
+        <p th:text="'Nb enfants : ' + ${tampon.nb_enfant_f}" />
+        <p th:text="'Date inscription : ' + ${tampon.date_f}" />
+        <p th:text="'Admin : ' + ${tampon.admin_f}" />
+        <p th:text="'Modo : ' + ${tampon.modo_f}" />
+        <a href="/inscrits">Ajouter un nouvel inscrit</a>
+    </body>
+</html>
